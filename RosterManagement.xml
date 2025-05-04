@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testsuite">
+	<test name="testname">
+		<groups>
+            <run>
+              <include name = "Regression"></include>
+            </run>
+        </groups>
+        <classes>	
+       <class name="com.supplycopia.rostermgmt.AddDraftFacility"/>		
+			<class name="com.supplycopia.rostermgmt.AddActivePublishFacility"/>
+			<class name="com.supplycopia.rostermgmt.AddInActivePublishFacility"/>
+			<class name="com.supplycopia.rostermgmt.AddPendingPublishFacility"/>
+			<class name="com.supplycopia.rostermgmt.UpdateDraftFacility"/>
+			<class name="com.supplycopia.rostermgmt.UpdateActivePublish"/>
+			<class name="com.supplycopia.rostermgmt.UpdateInActivePublish"/>
+			<class name="com.supplycopia.rostermgmt.UpdatePendingPublish"/>						
+			<class name="com.supplycopia.rostermgmt.DeActivateFacility"/>
+			<class name="com.supplycopia.rostermgmt.CloneDraftFacility"/>
+			<class name="com.supplycopia.rostermgmt.CloneActivePublish"/>
+			<class name="com.supplycopia.rostermgmt.DeleteFacility"/>			
+			<class name="com.supplycopia.rostermgmt.ExportChangeLogs"/>
+			<class name="com.supplycopia.rostermgmt.ExportFacility"/>			
+				</classes>
+	</test>
+	<listeners>	
+		<!-- <listener class-name="com.supplycopia.listeners.AutoTestListener"></listener>
+		<listener class-name="com.supplycopia.listeners.RetryListener"></listener>
+		 -->
+		 <listener class-name="com.supplycopia.report.ExtentReportListener"></listener>
+	</listeners>
+</suite> 

@@ -1,2 +1,1 @@
-# sc-qa-taf-rostermanagement
-RosterManagement
+# sc-qa-taf-template

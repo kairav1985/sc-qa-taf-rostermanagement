@@ -1,0 +1,6 @@
+target/*
+!target/apidocs/
+Reports/
+test-output/
+/target/
+
